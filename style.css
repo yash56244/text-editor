@@ -1,0 +1,80 @@
+iframe{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    width:600px;
+    height: 500px;
+    border: 2px solid violet;
+}
+button{
+    height: 40px;
+    width: 40px;
+}
+.buttons {
+    display: inline-block; 
+    color: #20bf6b !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #20bf6b !important;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+}
+.buttons:hover {
+    color: #494949 !important;
+    border-radius: 50%;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+select{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    width: 150px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+.select::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}  
+.select:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}  
+.select select option {
+    padding: 30px;
+}
+@media (max-width: 900px){
+    #editor{
+        width: 400px;
+    }
+}
+@media (max-width: 700px){
+    #editor{
+        width: 300px;
+    }
+}
+@media (max-width: 600px){
+    #editor{
+        transform: translate(-30%);
+    }
+    select{
+        width: 100px;
+    }
+}

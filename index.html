@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body onload="enable()">
+    <center><h1 style="color: teal;">Text Editor</h1></center>
+    <div class="button_container">
+        <div class="button_cont" ><a class="buttons" onclick="exec_command_1('bold')" ><i class="fa fa-bold" aria-hidden="true"></i></a></div>
+        <div class="button_cont" ><a class="buttons" onclick="exec_command_1('italic')" ><i class="fa fa-italic" aria-hidden="true"></i></a></div>
+        <div class="button_cont" ><a class="buttons" onclick="exec_command_1('underline')" ><i class="fa fa-underline" aria-hidden="true"></i></a></div>
+        <div class="button_cont" ><a class="buttons" onclick="exec_command_1('undo')" ><i class="fa fa-undo" aria-hidden="true"></i></a></div>
+        <div class="button_cont" ><a class="buttons" onclick="exec_command_1('copy')" title="Copy"><i class="fa fa-copy" aria-hidden="true"></i></a></div>
+        <div class="button_cont" ><a class="buttons" onclick="exec_command_1('justifyCenter')" ><i class="fa fa-align-center" aria-hidden="true"></i></a></div>
+        <div class="button_cont" ><a class="buttons" onclick="exec_command_1('selectAll')" title="Select All" style="cursor: pointer;">SA</a></div>
+        <div class="select">
+        <select name="" onclick="exec_command_2('fontSize', this.value)" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        </div>
+        <div class="select">
+        <select name="" onclick="exec_command_2('fontName', this.value)" id="">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier">Courier</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+        </div>
+    </div>
+    <iframe spellcheck="false" name="editor" style="" src="" id="editor" frameborder="0"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
